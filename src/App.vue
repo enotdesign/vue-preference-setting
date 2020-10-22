@@ -1,20 +1,36 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <menu-nav></menu-nav>
     <router-view/>
   </div>
 </template>
 
-<style>
+<script>
+import MenuNav from '@/components/MenuNav';
+
+export default {
+  components:{
+    MenuNav,
+  }
+
+}
+
+</script>
+
+
+<style lang="scss">
+
+
+body{
+  background-color: $colorPrincipal;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #a8bbce;
+
 }
 
 #nav {
@@ -23,7 +39,7 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #a8bbce;
 }
 
 #nav a.router-link-exact-active {

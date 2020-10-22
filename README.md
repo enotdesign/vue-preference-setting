@@ -1,4 +1,4 @@
-# mi-proyecto
+# Preference Setting VUE CLI 
 
 ## Project setup
 ```
